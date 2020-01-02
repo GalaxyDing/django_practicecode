@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+</head>
+<body>
+<h2>班级</h2>
+<ul>
+    {% for grade in grades %}
+    <li>
+        <a href="/App/student_info?gradename={{grade.grade_name}}">{{ grade.grade_name }}班</a>
+    </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
